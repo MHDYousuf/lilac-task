@@ -22,3 +22,6 @@ a {
 .card:hover {
 	cursor: pointer;
 }
+.MuiInput-root {
+	border: 1px solid #bebebe !important;
+}
