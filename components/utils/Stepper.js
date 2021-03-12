@@ -73,7 +73,7 @@ const ColorlibConnector = withStyles({
 	line: {
 		height: 3,
 		border: 0,
-		backgroundColor: "#eaeaf0",
+		backgroundColor: "#eaeaf1",
 		borderRadius: 1,
 	},
 })(StepConnector);
@@ -81,18 +81,6 @@ const ColorlibConnector = withStyles({
 function StepperComponent() {
 	const [activeStep, setActiveStep] = React.useState(1);
 	const steps = getSteps();
-
-	const handleNext = () => {
-		setActiveStep((prevActiveStep) => prevActiveStep + 1);
-	};
-
-	const handleBack = () => {
-		setActiveStep((prevActiveStep) => prevActiveStep - 1);
-	};
-
-	const handleReset = () => {
-		setActiveStep(0);
-	};
 
 	function getSteps() {
 		return [
